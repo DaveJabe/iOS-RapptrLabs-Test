@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="Rapptr_iOS_Test" customModuleProvider="target">
+            <connections>
+                <outlet property="animationButton" destination="9uL-ib-Ayk" id="ldi-Bd-aNe"/>
+                <outlet property="chatButton" destination="4Fa-5D-jYS" id="WQf-Sy-Tse"/>
+                <outlet property="loginButton" destination="6JX-Lv-AOm" id="IBa-KL-U4C"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_home_menu" translatesAutoresizingMaskIntoConstraints="NO" id="Qy9-5e-2Gz">
+                    <rect key="frame" x="0.0" y="53" width="414" height="843"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="center" axis="vertical" distribution="equalSpacing" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Hm4-MK-Td7">
+                    <rect key="frame" x="30" y="341.66666666666669" width="354" height="213.00000000000006"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Fa-5D-jYS" userLabel="UIButton">
+                            <rect key="frame" x="0.0" y="0.0" width="354" height="55"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="0GU-BW-aF2"/>
+                                <constraint firstAttribute="width" constant="354" id="mAJ-7v-0dl"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="CHAT" image="ic_chat">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressChatButton:" destination="-1" eventType="touchUpInside" id="vKS-9T-LMp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6JX-Lv-AOm" userLabel="UIButton">
+                            <rect key="frame" x="0.0" y="79" width="354" height="55"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="354" id="1oZ-aB-z0d"/>
+                                <constraint firstAttribute="height" constant="55" id="f5j-uc-9xw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="LOGIN" image="ic_login">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressLoginButton:" destination="-1" eventType="touchUpInside" id="vMe-dG-aNn"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9uL-ib-Ayk" userLabel="UIButton">
+                            <rect key="frame" x="0.0" y="158" width="354" height="55"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="D1E-a8-StT"/>
+                                <constraint firstAttribute="width" constant="354" id="PnU-sL-kir"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                            <state key="normal" title="ANIMATION" image="ic_animation">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="didPressAnimationButton:" destination="-1" eventType="touchUpInside" id="J6O-uG-LwS"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="0.054901960784313725" green="0.36078431372549019" blue="0.53725490196078429" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Qy9-5e-2Gz" secondAttribute="bottom" id="7jo-l1-9l0"/>
+                <constraint firstAttribute="trailing" secondItem="Hm4-MK-Td7" secondAttribute="trailing" constant="30" id="8cQ-xs-JSu"/>
+                <constraint firstItem="Hm4-MK-Td7" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Cah-0a-DUB"/>
+                <constraint firstItem="Hm4-MK-Td7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="O2h-7S-htL"/>
+                <constraint firstItem="Qy9-5e-2Gz" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="53" id="XOd-LI-GA9"/>
+                <constraint firstItem="Qy9-5e-2Gz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="pQt-KK-18a"/>
+                <constraint firstAttribute="trailing" secondItem="Qy9-5e-2Gz" secondAttribute="trailing" id="tXX-gD-87H"/>
+            </constraints>
+            <point key="canvasLocation" x="-71.014492753623188" y="287.94642857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_home_menu" width="375" height="667"/>
+        <image name="ic_animation" width="23" height="24"/>
+        <image name="ic_chat" width="24" height="24"/>
+        <image name="ic_login" width="24" height="24"/>
+    </resources>
+</document>
